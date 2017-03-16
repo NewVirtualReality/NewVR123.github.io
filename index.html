@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
+<?php 
+if(isset($_POST['password'])) {
+    if ($_POST['password'] == 'letmein'){
+        echo "Correct";
+        exit;
+
+
+    } else { echo "Incorrect";
+    exit;
+
+    }
+
+
+}
+
+
+?>
+
 <head>
 	<title> THIS IS THE VR THATS REALLY MADE IN JAVASCIPT</title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
-    <body text="#00000" bgcolor="#66ccff">
+    <body>
+
+        <form action="login.php" method="POST"> 
+            Please enter the password to continue to see logs.
+            <br/>
+            <input type="password" name="password"/>
+            <input type="submit" value="Enter!"/>
+        </form>
+
+
     	<center>
-    		<a href="index.html"Home </a> || <a href="index2.html"subs(restricted)>
+    		<a href="index.html"> Home </a> ||| <a href="index2.html"> subs</a>
     	</center>
-    	<form action="index2.html" align="center">
-    	<h> This is a website thats totally made in JavaScript </h>
-    	 <p>
-    		This whole website was made with JavaScript. All the imformation on it was made using JS. I have a question. What is JavaScript? if you know put that imformation in this box below.
-    	</p>
-    	<input type="text" name="Answer Here" value="Answer Here">
-    	<input type="text" name="name" value="name">
-    	<br/>
-    	<br/>
-    	<br/>
-    	<br/>
-    	<br/>
-    	<br/>
-    	<input type="reset" name="reset" value="Reset Answer">
-
-    	<label> Submit Here
-    		<input type="submit" name="submit" value="Aubmit Answer">
-    	</label>
-    </form> 
-
-
-
-
-
-
-</body>
-</html>
+    	<p> this is cool </p>
+    </body>
+    </html>
+ 
